@@ -1,0 +1,277 @@
+/*
+This class is for css that is common for the whole application and can be reused.
+Add css for specific classes in new file.
+
+ROUTINES:
+1. Make new css file for every new React Component Class
+2. Make small, reusable snippets of css classes
+  - You can combine multiple css classes to an HTML element
+
+.class{}
+.class:hover{}
+#id{}
+htmlElement{}
+*/
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.item1 { grid-area: elementOne; }
+.item2 { grid-area: elementTwo; }
+.item3 { grid-area: header; }
+
+.HeaderContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+          'elementOne header elementTwo';
+  grid-gap: 10px;
+  padding: 10px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.subHeaderText{
+   font-size: 16px;
+}
+
+.headerText{
+    font-size: 23px;
+}
+
+.blue{
+  background-color: white;
+}
+
+.centerElements{
+  margin: auto 0;
+  height: 100%;
+}
+
+#btnWhite{
+  color: white;
+}
+
+.newBtn{
+  color: white;
+}
+
+.hidden{ display: false; }
+
+.list{ width: 80%; }
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomNav {
+  position: fixed;
+  bottom: 0%;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.input{
+  width: 70%;
+}
+.textfield{
+  margin: 2rem 0;
+}
+
+.testcolor{
+  background-color: #1d5288;
+}
+
+.greenButton{
+    background: white;
+    border-top-color: #8bd771;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    color: #000000;
+    height:40px;
+    border-top-width: 7px;
+    width:25%;
+}
+.blueButton{
+    background: white;
+    border-top-color: #266796;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    color: #000000;
+    border-top-width: 7px;
+    height:40px;
+    width:25%;
+}
+
+.yellowButton{
+    background: white;
+    border-top-color: #ffb63c;
+    border-bottom-color: none;
+    border-left-color: none;
+    border-right-color: #ffffff;
+    color: #000000;
+    border-top-width: 7px;
+    height:40px;
+    width:25%;
+}
+
+.redButton{
+    background: white;
+    border-top-color: #d9534f;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    color: #000000;
+    border-top-width: 7px;
+    height:40px;
+    width:25%;
+}
+
+.listItems{
+  text-align: center;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+
+}
+
+.reportList{
+  max-height: 60%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reportList > div{
+    text-align: center;
+}
+
+.testd{
+    text-align: center;
+}
+
+.MuiListItem-root-69{
+    text-align: center;
+}
+
+.formContainer{
+  margin-top: 2rem;
+}
+
+.formButton{
+  margin: 1rem 1rem
+}
+
+.navBar{
+    width: 100%;
+}
+
+.navItem{
+    width: 8rem;
+}
+/*--------------Borders---------------*/
+
+.dark_border{
+  border: 1px solid #606060;
+  border-radius: 4px;
+}
+.dark_grey_border{
+  border: 1px solid #a2a2a2;
+  border-radius: 4px;
+}
+.grey_border{
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.dashed_border{
+  border: 1px dashed #606060;
+  border-radius: 4px;
+}
+
+.nav{
+  height: 80%;
+}
+
+/*--------------Reusable css---------*/
+
+.numberInput{ width: 70%; }
+.form{ margin: 2rem; }
+.dropdownText{ width: 70%; }
+.dropdown{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------Fonts----------------*/
+
+/*Font attributes*/
+.bold{font-weight: bold;}
+
+/*Font Family and Font Sizes*/
+.header_font{}
+.sub_header_font{}
+.reg_font{}
+.small_font{}
+
+/*------------Colors----------------*/
+
+/*Colors, i.e. for text*/
+.white_color{color: white;}
+.light_color{color: #f3f3f3;}
+.black_color{color: black;}
+
+.light_grey_color{color: #f9f9f9;}
+.grey_color{color: #e3e3e3;}
+.dark_grey_color{color: #8a8a8a;}
+
+.dark_teal_color{color: #00796b;}
+.turquoise_color{color: #5cc0dd;}
+
+.light_blue_color{color: #ebf0f5;}
+.blue_color{color: #266796;}
+.dark_blue_color{color: #1d5288;}
+
+.light_orange_color{color: #fbf8e3;}
+.orange_color{color: #ffb63c;}
+.dark_orange_color{color: #c58436;}
+
+.red_color{color: #d9534f;}
+.dark_red_color{color: #a13d3a;}
+
+/*Background Colors, i.e. for buttons and sections*/
+.white_background{background-color: white;}
+.light_background{background-color: #f4f6f8;}
+.black_background{background-color: black;}
+
+.light_grey_background{background-color: #f9f9f9;}
+.grey_background{background-color: #e3e3e3;}
+.dark_grey_background{background-color: #8a8a8a;}
+
+.green_background{background-color: #8bd771;}
+.dark_teal_background{background-color: #00796b;}
+.turquoise_background{background-color: #5cc0dd;}
+
+.light_blue_background{background-color: #ebf0f5;}
+.blue_background{background-color: #266796;}
+.dark_blue_background{background-color: #1d5288;}
+
+.yellow_background{background-color: #ffb63c;}
+
+.light_orange_background{background-color: #fbf8e3;}
+.orange_background{background-color: #f0af39;}
+.dark_orange_background{background-color: #c58436;}
+
+.red_background{background-color: #d9534f;}
+.dark_red_background{background-color: #a13d3a;}
+
